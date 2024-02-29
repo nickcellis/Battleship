@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    margin: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-left: 76.5px;
+}
+
+.wrapper-cell {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    background-color: #BBAC9F;
+}
+
+.cell {
+    flex-basis: calc(10% - 10px); /* Set the initial width of each item */
+    margin: 5px; /* Add margin for spacing */
+    box-sizing: border-box; /* Include margin in the width calculation */
+
+    background-color: #CDC1B3;
+    border-radius: 5px 5px 5px 5px;
+    
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6e675f;
+}
+
+.cell span {
+    width: 80px;
+    height: 80px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*background-color: red;*/
+}
+
+.cell:hover {
+    background-color: #dbcfc0;
+}
+
+.wrapper-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    padding: 5px 5px 5px 5px;
+
+    background-color: #BBAC9F;
+}
+
+.title {
+    color: #f7e8d8;
+    text-transform: uppercase;
+}
+
+.btn {
+    height: 100px;
+    background-color: #CDC1B3;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #dbcfc0;
+}
+
+.error-msg {
+    text-align: center;
+    color: red;
+}
+
+.over-message {
+    color: green;
+}
+
+.debug {
+    flex-basis: calc(10% - 10px); /* Set the initial width of each item */
+    margin: 5px; /* Add margin for spacing */
+    box-sizing: border-box; /* Include margin in the width calculation */
+
+    border-radius: 5px 5px 5px 5px;
+    
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 14px;
+    color: #6e675f;
+    background-color: blueviolet;
+}
